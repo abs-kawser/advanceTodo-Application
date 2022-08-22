@@ -1,7 +1,9 @@
+//todos er 6 ta case likha hoissa jata reducer perfrom korta para 
+
 import initialState from './intialState';
 import { ADDED,ALLCOMPLETED,TOGGLE,COLORESELECTD,DELETED,CLEARCOMPLETED } from "./actionType";
 
-
+// nextTodo function a reduce use kora add er jonno perfrom kora holo 
  const nextTodoId =(todos)=>{
       const maxId = todos.reduce((maxId,todo) => Math.max(todo.id,maxId),-1);
 
