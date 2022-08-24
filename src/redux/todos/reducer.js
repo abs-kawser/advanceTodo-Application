@@ -46,7 +46,7 @@ const reducer =(state =initialState,action) =>{
              })
                         
                     case DELETED:
-                        return state.filter(todo => todo.id != action.payload
+                        return state.filter(todo => todo.id !== action.payload
                              
                         )
                 
@@ -62,7 +62,7 @@ const reducer =(state =initialState,action) =>{
                                 return state.filter(todo => !todo.completed)
             
         default:
-            break;
+            return state ;
      }
 }
 export default reducer;
