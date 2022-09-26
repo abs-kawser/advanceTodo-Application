@@ -23,7 +23,7 @@ const reducer =(state =initialState, action)=>{
                             color
                         ]
                       }
-
+// nasted copy state 
                         case "remove":
                                return {
                                 ...state,
